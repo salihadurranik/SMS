@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Sms
@@ -15,6 +8,20 @@ namespace Sms
         public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void OnMenuClicked(object sender, EventArgs e)
+        {
+            var sendingMenu = ((ToolStripMenuItem)sender).Name;
+
+            switch (sendingMenu)
+            {
+                case "SessionBtn":
+                    var session = new Views.SessionView();
+                    session.MdiParent = this;
+                    session.Show();
+                    break;
+            }
         }
     }
 }

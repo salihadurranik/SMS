@@ -30,7 +30,7 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.setupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sessionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SessionBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.programsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -48,17 +48,18 @@
             // setupToolStripMenuItem
             // 
             this.setupToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sessionToolStripMenuItem,
+            this.SessionBtn,
             this.programsToolStripMenuItem});
             this.setupToolStripMenuItem.Name = "setupToolStripMenuItem";
             this.setupToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.setupToolStripMenuItem.Text = "Setup";
             // 
-            // sessionToolStripMenuItem
+            // SessionBtn
             // 
-            this.sessionToolStripMenuItem.Name = "sessionToolStripMenuItem";
-            this.sessionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sessionToolStripMenuItem.Text = "Session";
+            this.SessionBtn.Name = "SessionBtn";
+            this.SessionBtn.Size = new System.Drawing.Size(180, 22);
+            this.SessionBtn.Text = "Session";
+            this.SessionBtn.Click += new System.EventHandler(this.OnMenuClicked);
             // 
             // programsToolStripMenuItem
             // 
@@ -72,6 +73,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(811, 494);
             this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -88,7 +90,7 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem setupToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sessionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem SessionBtn;
         private System.Windows.Forms.ToolStripMenuItem programsToolStripMenuItem;
     }
 }
