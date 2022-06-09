@@ -67,11 +67,77 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\AdmissionFormView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdmissionFormView.Designer.cs">
+      <DependentUpon>AdmissionFormView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AttendanceView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AttendanceView.Designer.cs">
+      <DependentUpon>AttendanceView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DepartmentsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DepartmentsView.Designer.cs">
+      <DependentUpon>DepartmentsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\EnrollementView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\EnrollementView.Designer.cs">
+      <DependentUpon>EnrollementView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ExaminationView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ExaminationView.Designer.cs">
+      <DependentUpon>ExaminationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\PartsView.Designer.cs">
+      <DependentUpon>PartsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramCourseLinkView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProgramCourseLinkView.Designer.cs">
+      <DependentUpon>ProgramCourseLinkView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramOfferView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProgramOfferView.Designer.cs">
+      <DependentUpon>ProgramOfferView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProgramView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProgramView.Designer.cs">
+      <DependentUpon>ProgramView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\SessionView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\SessionView.Designer.cs">
       <DependentUpon>SessionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SubjectsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SubjectsView.Designer.cs">
+      <DependentUpon>SubjectsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TeacherView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\TeacherView.Designer.cs">
+      <DependentUpon>TeacherView.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -85,8 +151,41 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\AdmissionFormView.resx">
+      <DependentUpon>AdmissionFormView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AttendanceView.resx">
+      <DependentUpon>AttendanceView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DepartmentsView.resx">
+      <DependentUpon>DepartmentsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\EnrollementView.resx">
+      <DependentUpon>EnrollementView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ExaminationView.resx">
+      <DependentUpon>ExaminationView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\PartsView.resx">
+      <DependentUpon>PartsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProgramCourseLinkView.resx">
+      <DependentUpon>ProgramCourseLinkView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProgramOfferView.resx">
+      <DependentUpon>ProgramOfferView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProgramView.resx">
+      <DependentUpon>ProgramView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\SessionView.resx">
       <DependentUpon>SessionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SubjectsView.resx">
+      <DependentUpon>SubjectsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\TeacherView.resx">
+      <DependentUpon>TeacherView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Database\SmsDataSet.xsc">
       <DependentUpon>SmsDataSet.xsd</DependentUpon>
